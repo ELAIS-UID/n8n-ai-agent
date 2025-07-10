@@ -2,11 +2,9 @@ services:
   - type: web
     name: n8n-agent
     env: docker
-    region: oregon
+    dockerfilePath: ./docker-compose.yaml
     plan: free
-    autoDeploy: true
-    dockerfilePath: ""
-    dockerContext: ""
-    dockerCommand: docker-compose up
+    region: oregon
+
 
 
